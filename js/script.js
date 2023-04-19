@@ -38,14 +38,14 @@ let pokemonRepository = (function () {
 
 //conditional to highlight each pokemon based on height threshold//
 
-pokemonRepository.getAll().forEach(function (pokemonList) {
-    if (pokemonList.height < 1.4 && pokemonList.height >= 1) {
-        document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- Cool! That's average.<br>");
+pokemonRepository.getAll().forEach(function (pokemon) {
+    if (pokemon.height < 1.4 && pokemon.height >= 1) {
+      document.write(pokemon.name + " (height: " + pokemon.height + ") " + "- Cool! That's average.<br>");
     }
-    else if (pokemonList.height < 0.9) {
-        document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- That's pretty short. Cute!<br>");
+    else if (pokemon.height < 0.9) {
+      document.write(pokemon.name + " (height: " + pokemon.height + ") " + "- That's pretty short. Cute!<br>");
     }
     else {
-        document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- Wow, that's huge!<br>");
+      document.write(pokemon.name + " (height: " + pokemon.height + ") " + "- Wow, that's huge!<br>");
     }
-});
+  });
