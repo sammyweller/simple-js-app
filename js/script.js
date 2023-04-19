@@ -1,27 +1,44 @@
-let pokemonList = [
-    {
-        name: 'Pikachu',
-        height: 0.4,
-        types: 'Electric',
-    },
 
-    {
-        name: 'Jigglypuff',
-        height: 1,
-        types: ['normal', 'fairy']
-    },
+let pokemonRepository = (function () {
+    let pokemonList = [
+        {
+            name: 'Pikachu',
+            height: 0.4,
+            types: 'Electric',
+        },
 
-    {
-        name: 'Venomoth',
-        height: 1.5,
-        types: ['bug', 'poison']
-    },
-];
+        {
+            name: 'Jigglypuff',
+            height: 1,
+            types: ['normal', 'fairy']
+        },
+
+        {
+            name: 'Venomoth',
+            height: 1.5,
+            types: ['bug', 'poison']
+        },
+    ];
+
+    function add(pokemon) {
+        pokemonList.push(pokemon);
+    }
+
+    function getAll() {
+        return pokemonList;
+    }
+
+    return {
+        add: add,
+        getAll: getAll
+    };
+})();
+
 
 
 //conditional to highlight each pokemon based on height threshold//
 
-pokemonList.forEach(function (pokemon) {
+pokemonRepository.getAll().forEach(function (pokemonList) {
     if (pokemonList.height < 1.4 && pokemonList.height >= 1) {
         document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- Cool! That's average.<br>");
     }
