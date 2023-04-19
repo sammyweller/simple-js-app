@@ -21,14 +21,14 @@ let pokemonList = [
 
 //conditional to highlight each pokemon based on height threshold//
 
-for (let i = 0; i < pokemonList.length; i++) {
-    if (pokemonList[i].height < 1.4 && pokemonList[i].height >= 1) {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "- Cool! That's average.<br>");
+pokemonList.forEach(function (pokemon) {
+    if (pokemonList.height < 1.4 && pokemonList.height >= 1) {
+        document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- Cool! That's average.<br>");
     }
-    else if (pokemonList[i].height < 0.9) {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "- That's pretty short. Cute!<br>");
+    else if (pokemonList.height < 0.9) {
+        document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- That's pretty short. Cute!<br>");
     }
     else {
-        document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ") " + "- Wow, that's huge!<br>");
+        document.write(pokemonList.name + " (height: " + pokemonList.height + ") " + "- Wow, that's huge!<br>");
     }
-}
+});
