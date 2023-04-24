@@ -37,14 +37,14 @@ let pokemonRepository = (function () {
         listItem.appendChild(button);
         pokemonList.appendChild(listItem);
         button.addEventListener('click', function (event) {
-          showDetails(pokemon);
-          console.log(event);
+            showDetails(pokemon);
+            console.log(event);
         });
-      }
+    }
 
-      function showDetails(pokemon) {
+    function showDetails(pokemon) {
         console.log(pokemon);
-      }
+    }
 
     return {
         add: add,
@@ -56,4 +56,4 @@ let pokemonRepository = (function () {
 
 pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
-  });
+});
