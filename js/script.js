@@ -55,7 +55,6 @@ let pokemonRepository = (function () {
 
 
 
-//conditional to highlight each pokemon based on height threshold//
 
 pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
