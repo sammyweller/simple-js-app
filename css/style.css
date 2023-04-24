@@ -1,0 +1,21 @@
+.pokemonButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff9ff3;
+  box-shadow: 0px 4px 0px #e84393;
+  color: #fff;
+  text-shadow: 1px 1px 0px #e84393;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.pokemonButton:hover {
+    background-color: #fdcb6e;
+    box-shadow: 0px 4px 0px #e1b12c;
+    text-shadow: 1px 1px 0px #e1b12c;
+    transform: translateY(-2px);
+  }
+  
