@@ -6,25 +6,113 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Press+Start+2P&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
 	<title>Pokédex - A simple JS App</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
+
 <body>
-	<h1>Pokedex</h1>
-	<ul class="pokemon-list"></ul>
+	<header class="fixed-top">
+		<nav class="navbar" aria-label="Main nav">
+		  <a class="navbar-title" href="index.html">Pokédex</a>
+		  <form class="form-inline" aria-controls="pokemon-list">
+			<input id="search-input" class="pokemon-search form-control mr-sm-2" type="search" placeholder="Search Pokémon!" aria-label="Search" aria-describedby="search-instructions">
+		  </form>
+	  </nav>
+	  <p id="search-instructions" class="sr-only">Search for a Pokemon</p>
+    </header>
 
-	<div id="modal-container">
-    <div class="modal">
-    </div>
-  </div> 
+	<main class="container-fluid">
+		<div class="row">
+			<ul class="col-12 pokemon-list list-group text-capitalize" role="listbox" aria-labelledby="search-instructions"></ul>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+					<div class="modal-begin">
+						<div class="modal-gameboy">
+							<div class="modal-screen">
+								<div class="pokemon-info">
+									<div class="title"></div>
+									<div class="pokemon-picture">
+										<img class="pokemon-img" alt="image of pokemon">
+									</div>
+									<div class="modal-pokemon-description">
+										<div class="name">
+										</div>
+										<div class="height">
+										</div>
+										<div class="types text-capitalize">
+										</div>
+									</div>
+								</div>
+								<div class="break"></div>
+								<div class="gameboy-color">
+									<div class="gameboy-color__text">
+										<span>GAMEBOY</span>
+										<span>C</span>
+										<span>O</span>
+										<span>L</span>
+										<span>O</span>
+										<span>R</span>
+									</div>
+								</div>
+							</div>
+							<div class="modal-controls">
+								<div class="circle">
+									<div class="horizontal-plus"></div>
+									<div class="vertical-plus"></div>
+								</div>
+								<div class="ab-control">
+									<div class="a-control">
+										<div class="a-control__text">
+											<p>A</p>
+										</div>
+									</div>
+									<div class="b-control">
+										<div class="b-control__text">
+											<p>B</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-lines">
+								<div class="modal-line1"></div>
+								<div class="modal-line2"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 
 
+	<!-- Bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
 
+	<!--polyfill & fetch-->
 	<script src="js/promise-polyfill.js"></script>
 	<script src="js/fetch-polyfill.js"></script>
+
+	<!--script goes last-->
 	<script src="js/script.js"></script>
 </body>
 
