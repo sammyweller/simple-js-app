@@ -17,17 +17,13 @@ https://pokeapi.co/api/v2/pokemon/?limit=150
 ## Images of app: 
 
 ### Full desktop view of the app: 
-[Full desktop view of the app:] 
-(/img/full-desktop.png)
+![Full desktop view of the app:](./img/full-desktop.png)
 
 ### View of modal on desktop: 
-[View of modal on desktop:]
-(/img/full-modal.png)
+![View of modal on desktop:](./img/full-modal.png)
 
 ### Mobile version of the app: 
-[Mobile version of the app:]
-(/img/mobile-list.png)
+![Mobile version of the app:](./img/mobile-list.png)
 
 ### Modal on mobile: 
-[Modal on mobile:]
-(/img/mobile-modal.png)
+![Modal on mobile:](./img/mobile-modal.png)
