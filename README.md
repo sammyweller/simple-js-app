@@ -11,6 +11,9 @@ HTML, CSS, Javascript
 ## Libraries: 
 jQuery & Bootstrap
 
+## Link to the app: 
+https://sammyweller.github.io/simple-js-app/
+
 ## API: 
 https://pokeapi.co/api/v2/pokemon/?limit=150
 
