@@ -4,7 +4,7 @@ body {
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-position: bottom;
-  margin: 110px 150px 50px 162px;
+  margin: 110px 150px 100px 162px;
 }
 
 header {
@@ -310,8 +310,6 @@ li {
   margin-top: 18px;
   margin-left: 3px;
 }
-
-
 /* end of a-b controls: */
 
 .modal-lines {
@@ -339,6 +337,13 @@ li {
 }
 
 /* End modal styling */
+
+.lives {
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
 
 
 
