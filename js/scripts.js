@@ -133,8 +133,6 @@ let pokemonRepository = (function () {
       searchPokemon();
     });
 
-
-
   
     return {
       add: add,

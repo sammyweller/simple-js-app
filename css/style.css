@@ -4,7 +4,7 @@ body {
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-position: bottom;
-  margin: 80px 150px 100px 162px;
+  margin: 80px 150px 60px 162px;
 }
 
 header {
@@ -56,8 +56,8 @@ header {
   color: transparent;
 }
 
-
-
+  
+/* pokemon buttons */
 .pokemon-list {
   list-style-type: none;
   /* grid fallback */
@@ -110,7 +110,6 @@ header {
 
 
 /* Modal styling */
-
 
 .modal-dialog {
   display: flex;
