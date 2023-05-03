@@ -4,7 +4,7 @@ body {
   background-repeat: repeat-x;
   background-attachment: fixed;
   background-position: bottom;
-  margin: 110px 150px 100px 162px;
+  margin: 80px 150px 100px 162px;
 }
 
 header {
@@ -338,11 +338,15 @@ li {
 
 /* End modal styling */
 
-.lives {
-  max-width: 150px;
+.hearts {
   display: flex;
   justify-content: center;
-  margin: auto;
+}
+
+.lives {
+  max-width: 150px;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -388,6 +392,16 @@ li {
 }
 
 
+@media all and (max-width:486px) {
+
+.lives {
+  padding-top: 30px;
+  padding-bottom: -10px;
+}
+
+}
+
+
 @media all and (max-width:418px) {
 
   .pokemon-list {
@@ -397,6 +411,5 @@ li {
   .search-list {
     grid-template-columns: 1fr;
   }
-
 
 }
