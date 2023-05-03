@@ -9,7 +9,7 @@ let pokemonRepository = (function () {
          'detailsUrl' in pokemon) {
         pokemonList.push(pokemon);
       } else {
-        console.log('Invalid Pokémon');
+        console.log('Invalid');
       }
     }
   
@@ -22,7 +22,6 @@ let pokemonRepository = (function () {
       let listItem = document.createElement('li');
       listItem.classList.add('list-group-item');
 
-  
       let button = document.createElement('button');
       button.innerText = pokemon.name;
       button.classList.add('pokemonButton');
@@ -57,7 +56,7 @@ let pokemonRepository = (function () {
       })
     }
   
-    function loadDetails(pokemon) { //fet the DETAILS of the pokemon from the api
+    function loadDetails(pokemon) { //fetch the DETAILS of the pokemon from the api
       let url = pokemon.detailsUrl;
       return fetch(url).then(function (response) {
         return response.json();
@@ -84,7 +83,6 @@ let pokemonRepository = (function () {
     function showModal(item) {
       pokemonRepository.loadDetails(item).then(function () {
   
-        //Links pokemon details to their index classes
         let pokemonImage = document.querySelector('.pokemon-img');
         pokemonImage.src = item.imageUrl;
   
