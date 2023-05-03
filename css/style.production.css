@@ -24,6 +24,7 @@ body {
     font-size: 35px;
     color: black;
     text-shadow: 2px 2px 2px #fff;
+    margin-left: 10px;
   }
   
   .navbar-title:hover {
